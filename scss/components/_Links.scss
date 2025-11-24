@@ -1,0 +1,11 @@
+.Link {
+  color: var(--color-primary-light);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.Link:hover {
+  color: var(--color-brand-normal);
+}

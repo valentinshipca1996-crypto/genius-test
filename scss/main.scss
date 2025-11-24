@@ -1,0 +1,154 @@
+@import '../scss/utils/fonts';
+@import '../scss/utils/varlables';
+
+@import '../scss/bais';
+@import '../scss/utils/header';
+@import '../scss/utils/utils';
+
+@import '../scss/components/advantages';
+
+@import '../scss/components/buttons';
+
+@import '../scss/components/chefs';
+
+@import '../scss/components/chefs-card';
+
+@import '../scss/components/formats-section';
+
+@import '../scss/components/formats-card';
+
+@import '../scss/components/input';
+
+@import '../scss/components/forms-terns';
+
+@import '../scss/components/traditions';
+
+@import '../scss/components/Links';
+
+@import '../scss/components/modal';
+
+@import '../scss/components/hero-section';
+
+@import '../scss/components/contact-section';
+
+@import '../scss/components/sections';
+
+@import '../scss/utils/mixins';
+
+@import '../scss/utils/text';
+
+.circle {
+  @include circle(100px, 100px, white);
+  //   width: 100px;
+  //   height: 100px;
+  //   background-color: white;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* chefs */
+
+.carousel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+.carousel-button.next {
+  transform: rotate(180deg);
+}
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+}
+.carousel-button:hover .formats-button {
+  fill: var(--color-primary-light);
+}
+.formats-button {
+  fill: var(--color-primary-dark);
+}
+
+.contact-forma {
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+
+.address-link {
+  text-decoration: none;
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+}
+.address-link:hover {
+  color: var(--color-brand-normal);
+}
+.address-copyyrihgt {
+  color: var(--color-primary-light);
+  font-size: 14px;
+  font-weight: 400;
+}
+.address-social {
+  fill: var(--color-primary-light);
+}
+.footer {
+  padding: 32px 0;
+}
+.footer-container {
+  gap: 20px;
+  display: flex;
+}
+.footer-nav,
+.footer-address {
+  gap: 20px;
+  display: flex;
+  flex-basis: 50%;
+}
+.address-list,
+.address-info {
+  flex-grow: 1;
+}
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
+
+.footer {
+  position: relative;
+  background-image: url('../images/footer-background.png');
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer::before {
+  position: absolute;
+  width: 180px;
+  height: 120px;
+  left: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-image: url(/images/bread-small.png);
+  content: '';
+}
+
+.footer::after {
+  position: absolute;
+  width: 380px;
+  height: 190px;
+  right: 0;
+  bottom: 0;
+  background-image: url(/images/bread-big.png);
+  content: '';
+}
+/* Modal */
+
+/* Forma */
